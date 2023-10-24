@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>12 Rays School</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231024205427">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" data-goto=".page__main-block" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto=".page__about-us" class="menu__link">About&nbsp;Us</a></li>
+							<li class="menu__item"><a href="#" data-goto=".page__values" class="menu__link">Benefits</a></li>
+							<li class="menu__item"><a href="#" data-goto=".page__spiritual-mission" class="menu__link">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a href="#" data-popup="#popup-contact" class="header__button btn btn-turquoise">Join&nbsp;us</a>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрити</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+		<div id="popup-contact" aria-hidden="true" class="popup popup-contact">
+			<div class="popup__wrapper popup-contact__wrapper">
+				<div class="popup__content popup-contact__content">
+					<button data-close type="button" class="popup__close popup-contact__close">
+						<svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.65234 1.07031L16.23 15.648M16.23 1.07031L1.65234 15.648" stroke="currentColor" stroke-width="1.94369" />
+						</svg>
+					</button>
+					<div class="popup-contact__body">
+						<div class="popup-contact__title">Contact me</div>
+						<div class="popup-contact__text">
+							<p>
+								Leave your contact and we will call you back soon
+							</p>
+						</div>
+						<form data-dev method="POST" class="popup-contact__form contact-form" action="files/sendmail/sendmail.php" enctype="multipart/form-data">
+							<input required data-required data-validate type="text" name="name" placeholder="Name" class="input contact-form__input">
+							<input required data-required="email" data-validate="email" data-error="Incorrect phone number entered" type="text" name="form[]" placeholder="Phone number" class="input contact-form__input">
+							<textarea data-autoheight autoHeight name="message" placeholder="Message..." class="input contact-form__input"></textarea>
+							<button class="contact-form__button btn btn-orange" type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-blog-1" aria-hidden="true" class="popup popup-blog">
+			<div class="popup__wrapper popup-blog__wrapper">
+				<div class="popup__content popup-blog__content">
+					<button data-close type="button" class="popup__close popup-blog__close">
+						<svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.65234 1.07031L16.23 15.648M16.23 1.07031L1.65234 15.648" stroke="currentColor" stroke-width="1.94369" />
+						</svg>
+					</button>
+					<article class="popup-blog__body">
+						<div class="popup-blog__title-wrapper">
+							<h2 class="popup-blog__title">7 Easy poses that anyone can do</h2>
+							<div class="popup-blog__meta">April 21, 2023</div>
+							<div class="popup-blog__image-ibg">
+								<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" alt="blog Chi Gong"></picture>
+							</div>
+						</div>
+						<div class="popup__text popup-blog__text text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+								ex ea
+							</p>
+						</div>
+						<h4 class="popup-blog__subtitle">Lorem ipsum dolor</h4>
+						<div class="popup__text popup-blog__text text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+								ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+								eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+						</div>
+						<div class="popup-blog__callout">
+							<div class="popup-blog__callout_icon">
+								<img src="img/popup-quote.svg" alt="reviews">
+							</div>
+							<div class="popup-blog__callout_text">
+								<p>
+									Yoga is an ancient practice that has been used to help people experience a sense of balance and
+									relaxationfor centuries.
+								</p>
+							</div>
+						</div>
+						<div class="popup__text popup-blog__text text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+								ex ea
+							</p>
+						</div>
+						<div class="popup-blog__sociall">
+							<div class="popup-blog__sociall-row">
+								<div class="popup-blog__sociall-item">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0983 8.04012L12.5368 7.94673C12.5233 8.02827 12.5276 8.1118 12.5496 8.19149C12.5716 8.27118 12.6106 8.34514 12.664 8.40822C12.7175 8.47129 12.784 8.52198 12.859 8.55676C12.934 8.59154 13.0157 8.60958 13.0983 8.60962V8.04012ZM0.569493 8.04012V7.47063C0.418454 7.47063 0.273601 7.53063 0.166801 7.63743C0.0600001 7.74423 0 7.88908 0 8.04012H0.569493ZM2.84746 19.9995H15.7863V18.8605H2.84746V19.9995ZM17.1531 7.47063H13.0983V8.60962H17.1531V7.47063ZM13.6599 8.13352L14.5779 2.62653L13.4548 2.43859L12.5368 7.94673L13.6599 8.13352ZM12.8933 0.636719H12.6507V1.7757H12.8933V0.636719ZM9.33285 2.4124L6.46716 6.70979L7.41479 7.34193L10.2793 3.04339L9.33171 2.4124H9.33285ZM5.0457 7.47063H0.569493V8.60962H5.0457V7.47063ZM0 8.04012V17.152H1.13899V8.04012H0ZM18.5791 17.7101L19.9459 10.8762L18.8297 10.653L17.4629 17.4869L18.5791 17.7101ZM6.46716 6.70979C6.31116 6.94381 6.09979 7.1357 5.85182 7.26843C5.60386 7.40115 5.32696 7.47061 5.0457 7.47063V8.60962C5.51443 8.60962 5.9759 8.49392 6.38918 8.27278C6.80245 8.05164 7.15475 7.73189 7.41479 7.34193L6.46716 6.70979ZM14.5779 2.62653C14.6187 2.3818 14.6058 2.13111 14.54 1.89189C14.4741 1.65266 14.357 1.43065 14.1967 1.24128C14.0363 1.05192 13.8367 0.899742 13.6116 0.795337C13.3865 0.690933 13.1414 0.636805 12.8933 0.636719V1.7757C12.9761 1.77558 13.0579 1.79349 13.133 1.8282C13.2081 1.8629 13.2748 1.91357 13.3284 1.97667C13.3819 2.03977 13.4211 2.11378 13.4431 2.19356C13.4652 2.27333 13.4695 2.35695 13.456 2.43859L14.5779 2.62653ZM17.1531 8.60962C17.4059 8.6096 17.6555 8.66567 17.884 8.77378C18.1125 8.8819 18.3141 9.03936 18.4744 9.23482C18.6346 9.43028 18.7495 9.65886 18.8108 9.90409C18.872 10.1493 18.8792 10.4051 18.8297 10.653L19.9459 10.8762C20.0284 10.4632 20.0172 10.0371 19.9153 9.62856C19.8133 9.21997 19.6219 8.8391 19.355 8.51337C19.0881 8.18764 18.7523 7.92516 18.3717 7.74485C17.9912 7.56454 17.5754 7.47088 17.1543 7.47063V8.60962H17.1531ZM15.7863 19.9995C16.4448 19.9996 17.0829 19.7715 17.5921 19.3541C18.1013 18.9367 18.4501 18.3558 18.5791 17.7101L17.4629 17.4869C17.3855 17.8744 17.176 18.2231 16.8703 18.4736C16.5646 18.724 16.1815 18.8608 15.7863 18.8605V19.9995ZM12.6496 0.636719C11.9931 0.636621 11.3467 0.798652 10.7679 1.10842C10.1891 1.41819 9.69578 1.86611 9.33171 2.4124L10.2793 3.04339C10.5394 2.65343 10.8917 2.33368 11.305 2.11254C11.7182 1.8914 12.1797 1.7757 12.6484 1.7757V0.636719H12.6496ZM2.84746 18.8605C2.39435 18.8605 1.95979 18.6805 1.63939 18.3601C1.31898 18.0397 1.13899 17.6051 1.13899 17.152H0C0 17.5259 0.0736518 17.8962 0.21675 18.2417C0.359849 18.5872 0.569591 18.9011 0.834003 19.1655C1.09841 19.4299 1.41232 19.6396 1.75779 19.7827C2.10326 19.9258 2.47353 19.9995 2.84746 19.9995V18.8605Z" fill="currentColor" />
+										<path d="M5.125 8.04102V19.4309" stroke="currentColor" />
+									</svg>
+									<span>Like</span>
+								</div>
+								<div class="popup-blog__sociall-item">
+									<svg fill="currentColor" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+										<path d="M512,241.7L273.643,3.343v156.152c-71.41,3.744-138.015,33.337-188.958,84.28C30.075,298.384,0,370.991,0,448.222v60.436 l29.069-52.985c45.354-82.671,132.173-134.027,226.573-134.027c5.986,0,12.004,0.212,18.001,0.632v157.779L512,241.7z M255.642,290.666c-84.543,0-163.661,36.792-217.939,98.885c26.634-114.177,129.256-199.483,251.429-199.483h15.489V78.131 l163.568,163.568L304.621,405.267V294.531l-13.585-1.683C279.347,291.401,267.439,290.666,255.642,290.666z">
+										</path>
+									</svg>
+									<span>Share</span>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__slider swiper">
+						<div class="main-block__wrapper swiper-wrapper">
+							<div class="main-block__slide swiper-slide slide-main-block">
+								<article class="slide-main-block__item item-slide">
+									<div class="item-slide__content slide-content">
+										<h2 class="slide-content__title">REALIZE YOUR SPIRITUAL <span>POTENTIAL</span></h2>
+										<!-- <div class="slide-content__subtitle">Yoga is a wellness and exercise system that focuses
+											on
+											improving balance, strength, and flexibility.</div> -->
+										<div class="slide-content__buttons">
+											<a href="#" data-popup="#popup-contact" class="header__button btn btn-orange">Join&nbsp;us</a>
+											<!-- <a href="#" class="header__button btn btn-glassy">Classes</a> -->
+										</div>
+									</div>
+									<div class="item-slide__image-ibg">
+										<picture><source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.jpg" alt="REALIZE YOUR SPIRITUAL POTENTIAL"></picture>
+									</div>
+								</article>
+							</div>
+							<div class="main-block__slide swiper-slide slide-main-block">
+								<article class="slide-main-block__item item-slide">
+									<div class="item-slide__content slide-content">
+										<h2 class="slide-content__title">Why you should consider <span>Chi&nbsp;Gong</span></h2>
+										<!-- <div class="slide-content__subtitle">Yoga is a wellness and exercise system that focuses
+											on
+											improving balance, strength, and flexibility.</div> -->
+										<div class="slide-content__buttons">
+											<a href="#" data-popup="#popup-contact" class="header__button btn btn-orange">Join&nbsp;us</a>
+											<!-- <a href="#" class="header__button btn btn-glassy">Classes</a> -->
+										</div>
+									</div>
+									<div class="item-slide__image-ibg">
+										<picture><source srcset="img/slider/02.webp" type="image/webp"><img src="img/slider/02.jpg" alt="Why you should consider Chi Gong"></picture>
+									</div>
+								</article>
+							</div>
+							<div class="main-block__slide swiper-slide slide-main-block">
+								<article class="slide-main-block__item item-slide">
+									<div class="item-slide__content slide-content">
+										<h2 class="slide-content__title"><span>Experience</span> the Art of Chi&nbsp;Gong</h2>
+										<!-- <div class="slide-content__subtitle">Yoga is a wellness and exercise system that focuses
+											on
+											improving balance, strength, and flexibility.</div> -->
+										<div class="slide-content__buttons">
+											<a href="#" data-popup="#popup-contact" class="header__button btn btn-orange">Join&nbsp;us</a>
+											<!-- <a href="#" class="header__button btn btn-glassy">Classes</a> -->
+										</div>
+									</div>
+									<div class="item-slide__image-ibg">
+										<picture><source srcset="img/slider/03.webp" type="image/webp"><img src="img/slider/03.jpg" alt="Experience the Art of Chi Gong"></picture>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="main-block__pagination swiper-pagination swiper-pagination-fraction"></div>
+						<div class="main-block__arrow swiper-button-prev"></div>
+						<div class="main-block__arrow swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about-us">
+				<div class="about-us__container">
+					<article class="about-us__block">
+						<div class="about-us__block-title block-title">
+							<h2 class="about-us__title block-title__title">Who <span>we</span> are?</h2>
+						</div>
+						<div class="about-us__wrapper">
+							<div class="about-us__body">
+								<div class="about-us__text text">
+									<p>
+										Our school teaches a form of ancient Chi&nbsp;Gong, that has been adapted and combined
+										with
+										certain principles of ancient Yoga and advanced breathing techniques, in order to meet the
+										requirements of physiological and mental natures of the modern human.
+									</p>
+									<p>
+										We do follow the practices of flawlessness and self-attainment, whereby the same routine
+										(Chi
+										Gong routine that we practice does change slightly over time, however it’s structure
+										remains
+										the same) is practiced for a long period of time, because we believe, that practicing the
+										same routine can unlock:
+									</p>
+									<ul>
+										<li class="text">a) the routine’s true potential as a pathway to spiritual progress;</li>
+										<li>b) it helps build up a neophyte’s energy potential, cleanse energy channels that run
+											through energy bodies;</li>
+										<li>c) as a result, lead to substantial progress.</li>
+									</ul>
+									<p>
+										Think of a university degree, where you delve deeper into a subject, gaining a greater
+										more
+										detailed insight, yet you still retain the grand picture.
+									</p>
+								</div>
+								<div class="about-us__image-ibg">
+									<picture><source srcset="img/about-us/01.webp" type="image/webp"><img src="img/about-us/01.jpg" alt="about us image"></picture>
+								</div>
+							</div>
+							<div class="about-us__body about-us-reverse">
+								<div class="about-us__text about-us-reverse__text text">
+									<p>
+										Similarly, when one practices our routine, one does not only improve health, but develop
+										prior qualities necessary to attain higher states of consciousness – namely: patience,
+										endurance, humbleness, ego control, self-motivation, responsibility for one’s thoughts and
+										actions, modesty, ability to keep one’s achievements quietly to one’s self among many
+										others.The latter, being the most valuable of all.
+									</p>
+									<p>
+										Our school encourages only one form of competition, competition against your old
+										yesterday’s
+										self. If you can regularly come to the class, in spite of troubles at home, at work,
+										health
+										issues, weather conditions, your mood, you will be greatly rewarded, and the rewards will
+										come in different shapes and forms including but notwithstanding the most valuable form of
+										all – energy gain.
+									</p>
+									<p>
+										What it is, and how to achieve such a gain, we invite you to find out by attending our
+										classes. Last, but not least, only you are responsible for your own spiritual growth, for
+										your ups and downs, and only you can be held accountable for your failure to realize your
+										potential and it is up to the individual spirit, person, human, to ensure that a lifetime
+										of
+										potential growth is not lost in vain.
+										These are the views held by our school.
+									</p>
+								</div>
+								<div class="about-us__image-ibg about-us-reverse__image">
+									<picture><source srcset="img/about-us/02.webp" type="image/webp"><img src="img/about-us/02.jpg" alt="about us image"></picture>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="page__values values">
+				<div class="values__container">
+					<div class="values__block-title block-title">
+						<h2 class="values__title block-title__title">These <span>values</span> guide our classes</h2>
+						<div class="block-title__subtitle">To uphold three core Laws of the Universe:</div>
+					</div>
+					<div class="values__body">
+						<div class="values__item">
+							<img class="values__icon" src="img/values/logo-orange.svg" alt="">
+							<div class="values__text">
+								<p>The Law of Karma/Justice</p>
+							</div>
+						</div>
+						<div class="values__item">
+							<img class="values__icon" src="img/values/logo-orange.svg" alt="">
+							<div class="values__text">
+								<p>The Law of the Freedom of Will and Freedom of Choice</p>
+							</div>
+						</div>
+						<div class="values__item">
+							<img class="values__icon" src="img/values/logo-orange.svg" alt="">
+							<div class="values__text">
+								<p>The Law of Love</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__waves waves">
+				<div class="waves__container">
+					<div class="waves__block">
+						<div class="waves__wrapper">
+							<img class="waves__icon" src="img/waves/logo-white.svg" alt="">
+							<div class="waves__text">
+								<p>12 Rays.</p>
+								<p>"Know Thyself"</p>
+							</div>
+						</div>
+						<div class="waves__background-ibg waves-frame">
+							<picture><source srcset="img/waves/01.webp" type="image/webp"><img class="" src="img/waves/01.jpg" alt="IT`S GOOD FOR YOUR PHYSICAL MENTAL AND SPIRITUAL HEALTH"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__importance-content importance-content">
+				<div class="importance-content__container">
+					<div class="values__block-title block-title">
+						<h2 class="values__title block-title__title">Why <span>Chi&nbsp;Gong</span> is important</h2>
+						<div class="block-title__subtitle">It`s good for your physical mental and spiritual health</div>
+					</div>
+					<div class="values__text importance-content__text text">
+						<p>In terms of the proven long term physical benefits, these include: an improved posture, an
+							increased capacity of Oxygen/Carbon Dioxide exchange occurring in the lungs, whereby the expansion
+							and contraction of lungs during breathing and breath holds, restores lung capacity (our lifestyle
+							and breathing habits prohibit us from utilizing the entire lung capacity plus modern humans tend to
+							take a lot of shallow breaths). Moreover, the exercises help normalize breathing frequency, bring
+							improvements to the multiple if not all organ systems, generic revitalizing effect on the whole
+							body.
+						</p>
+						<p>From the psychological and mental perspectives, practicing Chi&nbsp;Gong in a group acts as the
+							motivation, binds people into a group with the same goals and objectives, a community I would say,
+							that is not bent on greed, violence, personal gain, desire to outperform and compete with others,
+							but focuses on self-achievement, personal and social responsibility, group support, forms a common
+							energy field that supports, protects each and every student and creates bonds that surpasses any
+							bonds known to the materialistic man.
+						</p>
+					</div>
+					<div class="importance-content__background">
+						<img class="" src="img/big-logo.svg" alt="Why Chi Gong is important">
+					</div>
+				</div>
+			</section>
+			<section class="page__spiritual-mission spiritual-mission">
+				<div class="spiritual-mission__container">
+					<div class="values__block-title block-title">
+						<h2 class="values__title block-title__title">Our classes <span>suit</span> everyone</h2>
+					</div>
+					<div class="spiritual-mission__body">
+						<article class="spiritual-mission__item">
+							<img class="spiritual-mission__icon" src="img/spiritual-mission/logo-brown.svg" alt="">
+							<div class="spiritual-mission__title">
+								<p>Mission</p>
+							</div>
+							<div class="spiritual-mission__text">
+								<p>To provide the right tools, instruments as well as favourable conditions to help maximize
+									realization of students' spiritual potential</p>
+							</div>
+						</article>
+						<article class="spiritual-mission__item">
+							<img class="spiritual-mission__icon" src="img/spiritual-mission/logo-brown.svg" alt="">
+							<div class="spiritual-mission__title">
+								<p>Vision</p>
+							</div>
+							<div class="spiritual-mission__text">
+								<p>To ensure that all students are treated with the utmost respect and their individual
+									spiritual needs and differences are accommodated</p>
+							</div>
+						</article>
+						<article class="spiritual-mission__item">
+							<img class="spiritual-mission__icon" src="img/spiritual-mission/logo-brown.svg" alt="">
+							<div class="spiritual-mission__title">
+								<p>Values</p>
+							</div>
+							<div class="spiritual-mission__text">
+								<p>To instil the values of personal responsibility for every thought, word and action.
+									To help instil mutual respect among all students
+								</p>
+							</div>
+						</article>
+						<article class="spiritual-mission__item">
+							<img class="spiritual-mission__icon" src="img/spiritual-mission/logo-brown.svg" alt="">
+							<div class="spiritual-mission__title">
+								<p>Primary Goal</p>
+							</div>
+							<div class="spiritual-mission__text">
+								<p>To provide and illuminate a path to the spiritual evolution</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__classes classes">
+				<div class="classes__container">
+					<div class="classes__block-title block-title">
+						<h2 class="classes__title block-title__title">When do we have <span>classes</span>?</h2>
+					</div>
+					<div class="classes__body">
+						<article class="classes__item class-item">
+							<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" class="class-item__image-ibg" alt="classes Chi Gong"></picture>
+							<div class="class-item__body">
+								<div class="class-item__meta">
+									<p>Tuesday 19:00</p>
+									<p>Thursday 19:00</p>
+								</div>
+								<h3 class="class-item__title">
+									<a href="#" class="class-item__link-title">Chi Gong</a>
+								</h3>
+								<div class="class-item__teacher">
+									<p>Alexander</p>
+								</div>
+								<div class="class-item__description">
+									<p>Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et
+										dolore magna aliqua.
+									</p>
+								</div>
+								<div class="class-item__button">
+									<a href="#" class="btn btn-turquoise">Join&nbsp;us</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<div class="reviews__block-title block-title">
+						<h2 class="reviews__title block-title__title">We asked people what they like about our <span>Chi
+								Gong</span>?
+						</h2>
+					</div>
+					<div class="reviews__body">
+						<div class="reviews__items">
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__icon">
+									<img src="img/reviews/quote.svg" alt="reviews">
+								</div>
+								<div class="item-reviews__text">
+									<p>
+										Great studio! The staff is so knowledgeable and the classes are very well done. I'm really
+										enjoying it!
+									</p>
+								</div>
+								<div class="item-reviews__author">
+									<div class="item-reviews__avatar">
+										<picture><source srcset="img/reviews/01.webp" type="image/webp"><img class="" src="img/reviews/01.jpg" alt="avatar"></picture>
+									</div>
+									<div class="item-reviews__name">Anna Fedorova</div>
+								</div>
+							</div>
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__icon">
+									<img src="img/reviews/quote.svg" alt="reviews">
+								</div>
+								<div class="item-reviews__text">
+									<p>
+										Great studio! The staff is so knowledgeable and the classes are very well done. I'm really
+										enjoying it!
+									</p>
+								</div>
+								<div class="item-reviews__author">
+									<div class="item-reviews__avatar">
+										<picture><source srcset="img/reviews/02.webp" type="image/webp"><img class="" src="img/reviews/02.jpg" alt="avatar"></picture>
+									</div>
+									<div class="item-reviews__name">Anna Fedorova</div>
+								</div>
+							</div>
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__icon">
+									<img src="img/reviews/quote.svg" alt="reviews">
+								</div>
+								<div class="item-reviews__text">
+									<p>
+										Great studio! The staff is so knowledgeable and the classes are very well done. I'm really
+										enjoying it!
+									</p>
+								</div>
+								<div class="item-reviews__author">
+									<div class="item-reviews__avatar">
+										<picture><source srcset="img/reviews/03.webp" type="image/webp"><img class="" src="img/reviews/03.jpg" alt="avatar"></picture>
+									</div>
+									<div class="item-reviews__name">Anna Fedorova</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__background">
+							<img class="" src="img/reviews/asana-cobra.svg" alt="We asked people what they like about our Chi
+							Gong?">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__discount discount">
+				<div class="discount__container">
+					<div class="discount__block">
+						<div class="discount__background-ibg discount-frame">
+							<picture><source srcset="img/discount/background-image.webp" type="image/webp"><img class="" src="img/discount/background-image.jpg" alt="Special price for Soldiers"></picture>
+						</div>
+						<article class="discount__body">
+							<div class="discount__promo">Up to 50%</div>
+							<div class="discount__subtitle">Special price</div>
+							<h3 class="discount__title">for Soldiers</h3>
+							<div class="discount__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. </p>
+							</div>
+							<a href="#" data-popup="#popup-contact" class="discount__button btn btn-orange">Join&nbsp;us</a>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__block-title block-title">
+						<h2 class="blog__title block-title__title">Blog</h2>
+					</div>
+					<div class="blog__items">
+						<article class="blog__item item-blog">
+							<a href="#" data-popup="#popup-blog-1" class="item-blog__image-ibg">
+								<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" alt="blog Chi Gong"></picture>
+							</a>
+							<div class="item-blog__body">
+								<h3 class="item-blog__title">
+									<a href="#" data-popup="#popup-blog-1" class="item-blog__link-title">7 easy Yoga poses that
+										anyone can do</a>
+								</h3>
+								<div class="item-blog__text text">
+									<p>
+										Often, people seek out yoga
+										as a means oftraining their body and mind.
+									</p>
+								</div>
+								<a href="#" data-popup="#popup-blog-1" class="item-blog__link">Read more</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<a href="#" data-popup="#popup-blog-1" class="item-blog__image-ibg">
+								<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" alt="blog Chi Gong"></picture>
+							</a>
+							<div class="item-blog__body">
+								<h3 class="item-blog__title">
+									<a href="#" data-popup="#popup-blog-1" class="item-blog__link-title">7 easy Yoga poses that
+										anyone can do</a>
+								</h3>
+								<div class="item-blog__text text">
+									<p>
+										Often, people seek out yoga
+										as a means oftraining their body and mind.
+									</p>
+								</div>
+								<a href="#" data-popup="#popup-blog-1" class="item-blog__link">Read more</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<a href="#" data-popup="#popup-blog-1" class="item-blog__image-ibg">
+								<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" alt="blog Chi Gong"></picture>
+							</a>
+							<div class="item-blog__body">
+								<h3 class="item-blog__title">
+									<a href="#" data-popup="#popup-blog-1" class="item-blog__link-title">7 easy Yoga poses that
+										anyone can do</a>
+								</h3>
+								<div class="item-blog__text text">
+									<p>
+										Often, people seek out yoga
+										as a means oftraining their body and mind.
+									</p>
+								</div>
+								<a href="#" data-popup="#popup-blog-1" class="item-blog__link">Read more</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<a href="#" data-popup="#popup-blog-1" class="item-blog__image-ibg">
+								<picture><source srcset="img/classes/01.webp" type="image/webp"><img src="img/classes/01.jpg" alt="blog Chi Gong"></picture>
+							</a>
+							<div class="item-blog__body">
+								<h3 class="item-blog__title">
+									<a href="#" data-popup="#popup-blog-1" class="item-blog__link-title">7 easy Yoga poses that
+										anyone can do</a>
+								</h3>
+								<div class="item-blog__text text">
+									<p>
+										Often, people seek out yoga
+										as a means oftraining their body and mind.
+									</p>
+								</div>
+								<a href="#" data-popup="#popup-blog-1" class="item-blog__link">Read more</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__main">
+						<a href="#" data-goto=".page__main-block" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
+						<div class="footer__menu menu-footer">
+							<nav class="menu-footer__body">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="#" data-goto=".page__about-us" class="menu-footer__link">About&nbsp;Us</a></li>
+									<li class="menu-footer__item"><a href="#" data-goto=".page__values" class="menu-footer__link">Benefits</a></li>
+									<li class="menu-footer__item"><a href="#" data-goto=".page__spiritual-mission" class="menu-footer__link">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__contacts contacts-footer">
+							<div class="contacts-footer__col">
+								<a href="#" class="contacts-footer__item">03056, Kiev Dovzenko st., 23</a>
+							</div>
+							<div class="contacts-footer__col">
+								<a href="tel:#" class="contacts-footer__item">(044) 555-0113</a>
+								<a href="tel:#" class="contacts-footer__item">(044) 555-0133</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<p>© 12 Rays School. All Rights Reserved 2023. Licensing</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231024205427"></script>
+</body>
+
+</html>
